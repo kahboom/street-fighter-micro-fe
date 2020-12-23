@@ -1,0 +1,24 @@
+{
+  "name": "street-fighter-micro-fe",
+  "version": "1.0.0",
+  "description": "Choose your character screen built with micro frontends architecture.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kahboom/street-fighter-micro-fe.git"
+  },
+  "author": "Rachel Yordán <nerdycodeblog@gmail.com> (https://www.nerdycode.com/)",
+  "license": "MIT",
+  "homepage": "https://www.github.com/kahboom/street-fighter-micro-fe#readme",
+  "bugs": {
+    "url": "https://www.github.com/kahboom/street-fighter-micro-fe/issues"
+  },
+  "scripts": {
+    "start": "serve --listen 3001"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "opener": "^1.5.2",
+    "serve": "^11.3.2",
+    "wait-on": "^5.2.0"
+  }
+}
