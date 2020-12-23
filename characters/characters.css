@@ -1,0 +1,29 @@
+/* CHARACTER LIST CONTENT STYLES */
+
+character-list {
+    display: block;
+}
+
+.characters_headline {
+    padding-top: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.character_list {
+    text-align: center;
+}
+
+.character_list a {
+    display: inline-block;
+    margin: 1rem;
+    border: 1px solid #333;
+}
+
+.character_list img {
+    max-width: 100%;
+    width: 300px;
+}
