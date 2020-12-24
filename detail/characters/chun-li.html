@@ -3,20 +3,15 @@
     <title>Chun-Li</title>
     <link href="/detail.css" rel="stylesheet" />
     <link href="/outlines.css" rel="stylesheet" />
-    <link
-            href="http://localhost:3002/characters.css"
-            rel="stylesheet"
-    />
-    <link
-            href="http://localhost:3003/controls.css"
-            rel="stylesheet"
-    />
+    <link href="http://localhost:3002/characters.css" rel="stylesheet" />
+    <link href="http://localhost:3003/controls.css" rel="stylesheet" />
 </head>
 <body class="detail_layout">
+<img class="logo" src="/img/street-fighter-logo.png" />
 <h1 class="detail_header">Choose Your Player</h1>
 <div class="detail_character">
+    <img class="character_image" src="/img/chun-li.png" />
     <h2 class="detail_headline">Chun-Li</h2>
-    <img class="character_image" src="/img/chun-li.png"/>
 </div>
 <div class="detail_details">
     <controls charname="chunli"></controls>
@@ -24,6 +19,7 @@
 <aside class="detail_characters">
     <character-list charname="chunli"></character-list>
 </aside>
+
 <!-- 3001 = detail -->
 <script src="/controller.js" async></script>
 <!-- 3002 = characters -->

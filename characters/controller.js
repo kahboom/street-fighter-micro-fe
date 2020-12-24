@@ -30,7 +30,7 @@ class CharacterList extends HTMLElement {
       <div class="characters_fragment">
         <h2 class="characters_headline">Characters</h2>
         <div class="character_list">
-          ${characters[charname]
+          ${allCharacters
       .map(
         char => `<a href="http://localhost:3001/characters/${char}">
                          <img src="/img/${char}.png" />
