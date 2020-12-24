@@ -1,8 +1,26 @@
 // in a real application this data would be fetched from Character's API
+const allCharacters = [
+  'balrog',
+  'blanka',
+  'chun-li',
+  'dhalsim',
+  'e-honda',
+  'guile',
+  'ken',
+  'm-bison',
+  'ryu',
+  'sagat',
+  'vega',
+  'zangief'
+];
+
 const characters = {
-  chunli: ["ken", "ryu"],
-  ryu: ["chunli", "ken"],
-  ken: ["chunli", "ryu"]
+  //chunli: ["ken", "ryu"],
+  //ryu: ["chunli", "ken"],
+  //ken: ["chunli", "ryu"]
+  chunli: allCharacters,
+  ryu: allCharacters,
+  ken: allCharacters
 };
 
 class CharacterList extends HTMLElement {
@@ -14,8 +32,8 @@ class CharacterList extends HTMLElement {
         <div class="character_list">
           ${characters[charname]
       .map(
-        char => `<a href="http://localhost:3001/character/${char}">
-                         <img src="https://mi-fr.org/img/${char}.svg" />
+        char => `<a href="http://localhost:3001/characters/${char}">
+                         <img src="/img/${char}.png" />
                        </a>`
       )
       .join("\n")}

@@ -16,16 +16,19 @@
 <h1 class="detail_header">Choose Your Player</h1>
 <div class="detail_character">
     <h2 class="detail_headline">Chun-Li</h2>
-    <img class="character_image" src="https://mi-fr.org/img/eicher_standard.svg"/>
+    <img class="character_image" src="/img/chun-li.png"/>
 </div>
 <div class="detail_details">
-    <controls-select id="chunli"></controls-select>
+    <controls charname="chunli"></controls>
 </div>
 <aside class="detail_characters">
-    <characters-recommendations id="chunli"></characters-recommendations>
+    <character-list charname="chunli"></character-list>
 </aside>
+<!-- 3001 = detail -->
 <script src="/controller.js" async></script>
+<!-- 3002 = characters -->
 <script src="http://localhost:3002/controller.js" async></script>
+<!-- 3003 = controls -->
 <script src="http://localhost:3003/controller.js" async></script>
 </body>
 </html>
