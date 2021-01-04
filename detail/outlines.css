@@ -5,7 +5,7 @@ html {
 }
 
 html::after {
-    content: "Controls (animates on event)";
+    content: "Detail (animates on event)";
     display: block;
     background-color: #bc3630;
     color: white;

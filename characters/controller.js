@@ -1,4 +1,4 @@
-// in a real application this data would be fetched from Character's API
+// This data should be fetched from the Character's API
 const allCharacters = [
   'balrog',
   'blanka',
@@ -14,16 +14,17 @@ const allCharacters = [
   'zangief'
 ];
 
-const characters = {
-  //chunli: ["ken", "ryu"],
-  //ryu: ["chunli", "ken"],
-  //ken: ["chunli", "ryu"]
-  chunli: allCharacters,
-  ryu: allCharacters,
-  ken: allCharacters
-};
+/**
+ * 3001 = detail
+ * 3002 = characters
+ * 3003 = controls
+ **/
 
 class CharacterList extends HTMLElement {
+  /**
+   * Called once element is
+   * attached to the DOM
+   */
   connectedCallback() {
     const charname = this.getAttribute("charname");
     this.innerHTML = `
@@ -42,6 +43,7 @@ class CharacterList extends HTMLElement {
     `;
   }
 }
+
 window.customElements.define(
   "character-list",
   CharacterList
