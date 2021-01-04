@@ -14,8 +14,7 @@
   },
   "scripts": {
     "prev": "serve --listen 3001",
-    "start": "concurrently --names \"detail  ,characters ,controls\" \"mfserve --listen 3001 detail\" \"mfserve --listen 3002 --cors characters\" \"mfserve --listen 3003 controls\" \"wait-on http://localhost:3001/characters/chun-li && opener http://localhost:3001/characters/chun-li\"",
-    "11_child_parent_communication": "concurrently --names \"decide  ,inspire ,checkout\" \"mfserve --listen 3001 11_child_parent_communication/team-decide\" \"mfserve --listen 3002 --cors 11_child_parent_communication/team-inspire\" \"mfserve --listen 3003 11_child_parent_communication/team-checkout\" \"wait-on http://localhost:3001/product/fendt && opener http://localhost:3001/product/fendt\""
+    "start": "concurrently --names \"detail  ,characters ,controls\" \"mfserve --listen 3001 detail\" \"mfserve --listen 3002 --cors characters\" \"mfserve --listen 3003 controls\" \"wait-on http://localhost:3001/characters/chun-li && opener http://localhost:3001/characters/chun-li\""
   },
   "dependencies": {},
   "devDependencies": {
