@@ -15,9 +15,9 @@ const allCharacters = [
 ];
 
 /**
- * 3001 = detail
- * 3002 = characters
- * 3003 = controls
+ * 4001 = detail
+ * 4002 = characters
+ * 4003 = controls
  **/
 
 class CharacterList extends HTMLElement {
@@ -33,7 +33,7 @@ class CharacterList extends HTMLElement {
         <div class="character_list">
           ${allCharacters
       .map(
-        char => `<a href="http://localhost:3001/characters/${char}">
+        char => `<a href="http://localhost:4001/characters/${char}">
                          <img src="/img/${char}.png" />
                        </a>`
       )

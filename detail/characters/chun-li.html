@@ -1,30 +1,31 @@
 <html>
 <head>
     <title>Chun-Li</title>
-    <link href="/detail.css" rel="stylesheet" />
-    <link href="/outlines.css" rel="stylesheet" />
-    <link href="http://localhost:3002/characters.css" rel="stylesheet" />
-    <link href="http://localhost:3003/controls.css" rel="stylesheet" />
+    <link href="/detail.css" rel="stylesheet"/>
+    <link href="/outlines.css" rel="stylesheet"/>
+    <link href="http://localhost:4002/characters.css" rel="stylesheet"/>
+    <link href="http://localhost:4003/controls.css" rel="stylesheet"/>
 </head>
 <body class="detail_layout">
-<img class="logo" src="/img/street-fighter-logo.png" />
+<img class="logo" src="/img/street-fighter-logo.png"/>
 <h1 class="detail_header">Choose Your Player</h1>
 <div class="detail_character">
-    <img class="character_image" src="/img/chun-li.png" />
+    <img class="detail_image" src="/img/chun-li.png"/>
     <h2 class="detail_headline">Chun-Li</h2>
 </div>
-<div class="detail_controls">
+<div class="detail_details">
     <controls-select charname="chunli"></controls-select>
 </div>
+
 <aside class="detail_characters">
     <character-list charname="chunli"></character-list>
 </aside>
 
-<!-- 3001 = detail -->
+<!-- 4001 = detail = decide -->
 <script src="/controller.js" async></script>
-<!-- 3002 = characters -->
-<script src="http://localhost:3002/controller.js" async></script>
-<!-- 3003 = controls -->
-<script src="http://localhost:3003/controller.js" async></script>
+<!-- 4002 = characters = inspire -->
+<script src="http://localhost:4002/controller.js" async></script>
+<!-- 4003 = controls = checkout -->
+<script src="http://localhost:4003/controller.js" async></script>
 </body>
 </html>
