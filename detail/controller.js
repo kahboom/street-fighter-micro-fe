@@ -1,7 +1,4 @@
 (function detail() {
-  // Should image display be changed here?
-  //const image = document.querySelector('.detail-image');
-  //const selectBtn = document.querySelector('controls');
   const selectBtn = document.querySelector('controls-select');
   const characterEl = document.querySelector('.detail_character');
 

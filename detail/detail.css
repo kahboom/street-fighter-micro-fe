@@ -11,10 +11,6 @@ html {
     font-size: 20px;
 }
 
-.logo {
-    /*max-width: 500px;*/
-}
-
 h1 {
     color: #D38832;
 }
@@ -53,23 +49,6 @@ a {
     margin: 0 auto;
 }
 
-.detail_character {
-    /*position: relative;*/
-}
-
-.detail_character--confirm::after {
-    position: absolute;
-    right: 0;
-    top: 0.5em;
-    left: 0;
-    text-align: center;
-    font-size: 10em;
-    color: rgb(28, 184, 65);
-    content: "✔";
-    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.8);
-    animation: confirm 2s ease-in-out forwards;
-}
-
 
 .full-row {
     margin: 1rem 0 0;
@@ -97,6 +76,21 @@ a {
         opacity: 0;
     }
 }
+
+
+.detail_character--confirm::after {
+    position: absolute;
+    right: 0;
+    top: 2.5em;
+    left: -2em;
+    text-align: center;
+    font-size: 10em;
+    color: rgb(28, 184, 65);
+    content: "✔";
+    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.8);
+    animation: confirm 2s ease-in-out forwards;
+}
+
 
 .detail_headline {
     font-size: 1.5em;

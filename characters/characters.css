@@ -2,6 +2,7 @@
 
 character-list {
     display: block;
+    width: 50%;
 }
 
 .characters_headline {
@@ -16,15 +17,15 @@ character-list {
 .character_list {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
 }
 
 .character_list a {
     display: inline-block;
-    /*margin: 1rem;*/
     border: 1px solid #333;
 }
 
 .character_list img {
-    max-width: 100%;
-    width: 300px;
+    width: 84px;
 }
