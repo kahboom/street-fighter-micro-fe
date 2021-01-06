@@ -33,7 +33,7 @@ class CharacterList extends HTMLElement {
         <div class="character_list">
           ${allCharacters
       .map(
-        char => `<a href="http://localhost:4001/characters/${char}">
+        char => `<a href="/characters/${char}">
                          <img src="/img/${char}.png" />
                        </a>`
       )

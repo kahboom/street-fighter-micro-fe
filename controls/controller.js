@@ -17,7 +17,6 @@ class Controls extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <p>Hello from Controls!</p>
     <button type="button">Choose Character</button>
     `;
 
