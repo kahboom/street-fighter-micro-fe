@@ -29,7 +29,9 @@ class CharacterList extends HTMLElement {
     const charname = this.getAttribute("charname");
     this.innerHTML = `
       <div class="characters_fragment">
+      <!--
         <h2 class="characters_headline">Characters</h2>
+        -->
         <div class="character_list">
           ${allCharacters
       .map(

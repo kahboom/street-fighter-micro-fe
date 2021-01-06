@@ -9,17 +9,23 @@
           href="/chun-li.ico">
 </head>
 <body class="detail_layout">
-<img class="logo" src="/img/street-fighter-logo.png"/>
-<h1 class="detail_header">Choose Your Player</h1>
-<div class="detail_character">
-    <img class="detail_image" src="/img/chun-li.png"/>
-    <h2 class="detail_headline">Chun-Li</h2>
+<div class="logo">
+<img class="logo" width="250" src="/img/street-fighter-logo.png"/>
 </div>
-<div class="detail_details">
-    <controls-select charname="chunli"></controls-select>
+<h1 class="detail_header">CHOOSE YOUR PLAYER</h1>
+
+<div class="detail_character_container full-row">
+    <div class="detail_character">
+        <img class="detail_image" src="/img/chun-li.png"/>
+        <h2 class="detail_headline">Chun-Li</h2>
+    </div>
+
+    <div class="detail_details">
+        <controls-select charname="chunli"></controls-select>
+    </div>
 </div>
 
-<aside class="detail_characters">
+<aside class="detail_characters full-row">
     <character-list charname="chunli"></character-list>
 </aside>
 

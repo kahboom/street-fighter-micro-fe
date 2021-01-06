@@ -14,12 +14,13 @@ character-list {
 }
 
 .character_list {
+    display: flex;
     text-align: center;
 }
 
 .character_list a {
     display: inline-block;
-    margin: 1rem;
+    /*margin: 1rem;*/
     border: 1px solid #333;
 }
 

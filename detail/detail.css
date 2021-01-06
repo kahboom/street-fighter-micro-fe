@@ -12,7 +12,7 @@ html {
 }
 
 .logo {
-    max-width: 500px;
+    /*max-width: 500px;*/
 }
 
 h1 {
@@ -40,13 +40,43 @@ a {
     margin: 1rem 0 0;
     text-align: center;
     padding: 0.25rem;
-    border: solid lightgray;
     border-width: 3px 0;
     grid-column: 1 / span 3;
 }
 
+.detail_character_container {
+    display: flex;
+}
+
+.detail_details {
+    align-self: center;
+    margin: 0 auto;
+}
+
 .detail_character {
-    position: relative;
+    /*position: relative;*/
+}
+
+.detail_character--confirm::after {
+    position: absolute;
+    right: 0;
+    top: 0.5em;
+    left: 0;
+    text-align: center;
+    font-size: 10em;
+    color: rgb(28, 184, 65);
+    content: "✔";
+    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.8);
+    animation: confirm 2s ease-in-out forwards;
+}
+
+
+.full-row {
+    margin: 1rem 0 0;
+    text-align: center;
+    padding: 0.25rem;
+    border-width: 3px 0;
+    grid-column: 1 / span 3;
 }
 
 @keyframes confirm {
@@ -68,19 +98,6 @@ a {
     }
 }
 
-.detail_character--confirm::after {
-    position: absolute;
-    right: 0;
-    top: 0.5em;
-    left: 0;
-    text-align: center;
-    font-size: 10em;
-    color: rgb(28, 184, 65);
-    content: "✔";
-    text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.8);
-    animation: confirm 2s ease-in-out forwards;
-}
-
 .detail_headline {
     font-size: 1.5em;
     text-align: center;
@@ -89,10 +106,4 @@ a {
 
 .detail_image {
     width: 100%;
-}
-
-.detail_details {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
 }
